@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Femina Fashions | Bangalore</title>
+
+<!-- SOCIAL PREVIEW -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Femina Fashions - Asima Parveen">
+<meta property="og:description" content="Custom Tailoring & Designer Stitching | Since 1993">
+<meta property="og:image" content="https://terasynctech.github.io/femina-fashions/logo.png?v=1">
+<meta property="og:url" content="https://terasynctech.github.io/femina-fashions/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://terasynctech.github.io/femina-fashions/logo.png?v=1">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #000000, #1a0033, #000);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* ===== GLOW EFFECT ===== */
+body::before {
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,0,150,0.3), transparent);
+    top: -100px;
+    left: -100px;
+    animation: glowMove 6s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes glowMove {
+    0% { transform: translate(0,0); }
+    100% { transform: translate(200px,200px); }
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: rgba(255,255,255,0.06);
+    border-radius: 25px;
+    padding: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 50px rgba(255,0,150,0.3);
+    animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+    from {opacity:0; transform: translateY(30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* ===== LOGO ===== */
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* ===== TEXT ===== */
+h1 {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #ffd700;
+}
+
+p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* ===== BADGE ===== */
+.badge {
+    margin-top: 10px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    display: inline-block;
+    font-size: 13px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 5px #ffd700; }
+    50% { box-shadow: 0 0 25px #ffd700; }
+    100% { box-shadow: 0 0 5px #ffd700; }
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: block;
+    margin: 12px auto;
+    padding: 13px;
+    width: 90%;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #ff0080, #7928ca);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SHINE EFFECT */
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    transform: scale(1.06);
+}
+
+/* ===== RIPPLE EFFECT ===== */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: rippleEffect 0.6s linear;
+    background: rgba(255,255,255,0.6);
+}
+
+@keyframes rippleEffect {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* ===== SERVICES ===== */
+.services {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.services h3 {
+    text-align: center;
+    color: #ffd700;
+}
+
+.services li {
+    margin: 8px 0;
+    color: #ddd;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<!-- LOGO -->
+<img src="logo.png" class="logo">
+
+<!-- TITLE -->
+<h1>Femina Fashions</h1>
+
+<p><b>Asima Parveen</b></p>
+
+<p>
+Custom Tailoring & Designer Stitching<br>
+Since 1993
+</p>
+
+<div class="badge">
+Boutique | Apparel | Wedding Services
+</div>
+
+<!-- BUTTONS -->
+<a class="btn" href="tel:+919739662138">📞 Call Now</a>
+
+<a class="btn" href="https://wa.me/919739662138?text=Hi%20I%20am%20interested%20in%20your%20designs">
+💬 WhatsApp
+</a>
+
+<a class="btn" href="https://instagram.com/femina_fashions" target="_blank">
+📸 Instagram
+</a>
+
+<a class="btn" href="https://maps.google.com/?q=No8+Peace+Garden+Yasin+Nagar+HBR+Layout+Bangalore" target="_blank">
+📍 View Location
+</a>
+
+<a class="btn" href="contact.vcf" download>
+📥 Save Contact
+</a>
+
+<!-- SERVICES -->
+<div class="services">
+<h3>👗 Our Services</h3>
+
+<ul>
+<li>Custom Tailoring</li>
+<li>Designer Stitching</li>
+<li>Kurti & Saree Designs</li>
+<li>Wedding Planning Services</li>
+<li>Modern Fashion Collections</li>
+</ul>
+</div>
+
+<div class="footer">
+Powered by TeraCard 🚀
+</div>
+
+</div>
+</div>
+
+<!-- RIPPLE SCRIPT -->
+<script>
+document.querySelectorAll(".btn").forEach(button => {
+    button.addEventListener("click", function (e) {
+        const circle = document.createElement("span");
+        const diameter = Math.max(this.clientWidth, this.clientHeight);
+        const radius = diameter / 2;
+
+        circle.style.width = circle.style.height = diameter + "px";
+        circle.style.left = (e.clientX - this.getBoundingClientRect().left - radius) + "px";
+        circle.style.top = (e.clientY - this.getBoundingClientRect().top - radius) + "px";
+        circle.classList.add("ripple");
+
+        const ripple = this.getElementsByClassName("ripple")[0];
+        if (ripple) ripple.remove();
+
+        this.appendChild(circle);
+    });
+});
+</script>
+
+</body>
+</html>
